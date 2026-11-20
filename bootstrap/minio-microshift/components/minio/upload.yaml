@@ -12,7 +12,7 @@ spec:
 
       initContainers:
         - name: wait-for-buckets
-          image: minio/mc
+          image: cgr.dev/chainguard/minio:latest
           command: ["/bin/sh", "-c"]
           args:
             - |
